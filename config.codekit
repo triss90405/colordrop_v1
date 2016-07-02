@@ -75,6 +75,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/css\/vendor\/_normalize-4.1.1.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/vendor\/_normalize-4.1.1.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/css\/_normalize-4.1.1.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/img\/android-chrome-144x144.png": {
 		"fileType": 32768,
 		"ignore": 0,
