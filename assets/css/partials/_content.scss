@@ -1,5 +1,8 @@
 body {
   transition: background 400ms ease-in-out;
+  @media (max-width: 650px) {
+    background: $color2;
+  }
 }
 
 .content {
@@ -12,6 +15,9 @@ body {
   transition: all 200ms ease-in-out;
   &.menu--active {
     width: calc(100vw - 400px);
+    @media (max-width: 650px) {
+      width: calc(100vw - 200px);
+    }
   }
   @media (max-width: 650px) {
     width: 100vw;
@@ -30,6 +36,9 @@ body {
       transform: scale(1.1);
       transition: all 100ms ease-in;
       box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      @media (max-width: 650px) {
+        transform: scale(11  );
+      }
     }
     @media (max-width: 2200px) {
       width: 11.2857142857%;

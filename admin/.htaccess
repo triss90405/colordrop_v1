@@ -1,0 +1,4 @@
+AuthUserFile /Users/triss/Dropbox/Business/Projects/colordrop.io/colordrop_v1/admin/.htpasswd
+AuthType Basic
+AuthName "ColorDrop - restricted Area"
+Require valid-user
