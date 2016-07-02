@@ -3,4 +3,35 @@
   width: 200px;
   height: 100vh;
   text-align: center;
+  padding-top: 50px;
+
+  .navigation__logo {
+
+  }
+
+  .navigation__title {
+    font-size: 1.5em;
+    span {
+      font-size: 0.7em;
+      color: darken($color1, 30%);
+    }
+  }
+
+  .navigation__items {
+    margin-top: 50px;
+    padding: 0 40px;
+    a {
+      color: darken($color1, 40%);
+      display: block;
+      text-align: left;
+      padding: 10px 0;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &.selected {
+        color: $color3;
+      }
+    }
+  }
 }

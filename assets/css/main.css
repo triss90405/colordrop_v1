@@ -798,6 +798,9 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+* {
+  box-sizing: border-box; }
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1170,10 +1173,31 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 body {
-  font-family: "proxima_nova_alt_rgregular"; }
+  font-family: "proxima_nova_alt_rgregular";
+  font-size: 16px;
+  color: #433F3F; }
 
 .navigation {
   background: #F7F7F7;
   width: 200px;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
+  .navigation .navigation__title {
+    font-size: 1.5em; }
+    .navigation .navigation__title span {
+      font-size: 0.7em;
+      color: #ababab; }
+  .navigation .navigation__items {
+    margin-top: 50px;
+    padding: 0 40px; }
+    .navigation .navigation__items a {
+      color: #919191;
+      display: block;
+      text-align: left;
+      padding: 10px 0;
+      text-decoration: none; }
+      .navigation .navigation__items a:hover {
+        text-decoration: underline; }
+      .navigation .navigation__items a.selected {
+        color: #2980D9; }
