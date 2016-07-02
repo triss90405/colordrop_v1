@@ -81,9 +81,11 @@ function bgChangeColor() {
 
 function detailsView() {
   var palette = $('.palette'),
-      paletteDetails = $('.palette__details');
+      paletteDetails = $('.palette__details'),
+      content = $('.content');
   palette.on('click', function(){
     paletteDetails.removeClass('active');
+    content.addClass('menu--active');
     $(this).next(paletteDetails).toggleClass('active');
   });
 }

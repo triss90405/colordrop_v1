@@ -8,8 +8,11 @@ body {
   margin-left: 200px;
   display: flex;
   flex-wrap: wrap;
-
   overflow: hidden;
+  transition: all 200ms ease-in-out;
+  &.menu--active {
+    width: calc(100vw - 400px);
+  }
   @media (max-width: 650px) {
     width: 100vw;
     margin-left: 0;
@@ -64,7 +67,7 @@ body {
     overflow-y: scroll;
     &.active {
       right: 0;
-      box-shadow: -10px 0 25px rgba(0,0,0,0.3);
+      box-shadow: -10px 0 25px rgba(0,0,0,0.15);
       transition: all 150ms ease-in;
     }
     .color1, .color2, .color3, .color4 {
