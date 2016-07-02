@@ -1,12 +1,11 @@
 // Change background color
 function bgChangeColor() {
-  var content = $('.content'),
+  var content = $('body'),
       blue = $('.bg__color.blue'),
       red = $('.bg__color.red'),
       yellow = $('.bg__color.yellow'),
       light = $('.bg__color.light'),
       dark = $('.bg__color.dark');
-
   blue.on('click', function(){
     content.css('background-color', '#2980D9');
   });
@@ -25,7 +24,18 @@ function bgChangeColor() {
 }
 
 
+function detailsView() {
+  var palette = $('.palette'),
+      paletteDetails = $('.palette__details');
+  palette.on('click', function(){
+    paletteDetails.removeClass('active');
+    $(this).next(paletteDetails).toggleClass('active');
+  });
+}
+
+
 // Call fucntions
 $(document).ready(function() {
   bgChangeColor();
+  detailsView();
 });
