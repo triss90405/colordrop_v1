@@ -1444,3 +1444,146 @@ button {
     border: 0;
     height: 1px;
     background: #c4c4c4; }
+
+section#flat__colors.content {
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 0;
+  background: pink;
+  flex-direction: column; }
+  section#flat__colors.content .tiny-3 {
+    padding: 0 !important; }
+  section#flat__colors.content .item {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 150ms ease-in-out;
+    position: relative; }
+    section#flat__colors.content .item p {
+      font-size: 1.5rem;
+      transition: all 150ms ease-in-out; }
+      @media (max-width: 48rem) {
+        section#flat__colors.content .item p {
+          transform: rotate(-90deg); } }
+    section#flat__colors.content .item.turqoise {
+      background: #1ABC9C;
+      color: #0b4c3f; }
+      section#flat__colors.content .item.turqoise:hover {
+        background: #1dd2af; }
+    section#flat__colors.content .item.emerald {
+      background: #2ECC71;
+      color: #176437; }
+      section#flat__colors.content .item.emerald:hover {
+        background: #40d47e; }
+    section#flat__colors.content .item.river {
+      background: #3498DB;
+      color: #16527a; }
+      section#flat__colors.content .item.river:hover {
+        background: #4aa3df; }
+    section#flat__colors.content .item.amethyst {
+      background: #9B59B6;
+      color: #532c64; }
+      section#flat__colors.content .item.amethyst:hover {
+        background: #a66bbe; }
+    section#flat__colors.content .item.asphalt {
+      background: #34495E;
+      color: #07090c; }
+      section#flat__colors.content .item.asphalt:hover {
+        background: #3d566e; }
+    section#flat__colors.content .item.greenSea {
+      background: #16A085;
+      color: #073028; }
+      section#flat__colors.content .item.greenSea:hover {
+        background: #19b698; }
+    section#flat__colors.content .item.green {
+      background: #27AE60;
+      color: #104627; }
+      section#flat__colors.content .item.green:hover {
+        background: #2cc36b; }
+    section#flat__colors.content .item.green-haze {
+      background: #019875;
+      color: #001914; }
+      section#flat__colors.content .item.green-haze:hover {
+        background: #01b189; }
+    section#flat__colors.content .item.gossip {
+      background: #87D37C;
+      color: #419b34; }
+      section#flat__colors.content .item.gossip:hover {
+        background: #98d98f; }
+    section#flat__colors.content .item.blue {
+      background: #2980D9;
+      color: #14416f; }
+      section#flat__colors.content .item.blue:hover {
+        background: #3f8ddd; }
+    section#flat__colors.content .item.purple {
+      background: #8E44AD;
+      color: #432051; }
+      section#flat__colors.content .item.purple:hover {
+        background: #9b50ba; }
+    section#flat__colors.content .item.nightly {
+      background: #2C3E50;
+      color: black; }
+      section#flat__colors.content .item.nightly:hover {
+        background: #354b60; }
+    section#flat__colors.content .item.sun {
+      background: #F1C40F;
+      color: #796307; }
+      section#flat__colors.content .item.sun:hover {
+        background: #f2ca27; }
+    section#flat__colors.content .item.carrot {
+      background: #E67E22;
+      color: #7b410e; }
+      section#flat__colors.content .item.carrot:hover {
+        background: #e98b39; }
+    section#flat__colors.content .item.rose {
+      background: #E74C3C;
+      color: #921e12; }
+      section#flat__colors.content .item.rose:hover {
+        background: #ea6153; }
+    section#flat__colors.content .item.powder {
+      background: #ECF0F1;
+      color: #a3b6bb; }
+      section#flat__colors.content .item.powder:hover {
+        background: #fbfcfc; }
+    section#flat__colors.content .item.concrete {
+      background: #95A5A6;
+      color: #566566; }
+      section#flat__colors.content .item.concrete:hover {
+        background: #a3b1b2; }
+    section#flat__colors.content .item.orange {
+      background: #F39C12;
+      color: #7f5006; }
+      section#flat__colors.content .item.orange:hover {
+        background: #f4a62a; }
+    section#flat__colors.content .item.pumpkin {
+      background: #D35400;
+      color: #542100; }
+      section#flat__colors.content .item.pumpkin:hover {
+        background: #ed5e00; }
+    section#flat__colors.content .item.red {
+      background: #C0392D;
+      color: #591a15; }
+      section#flat__colors.content .item.red:hover {
+        background: #d04336; }
+    section#flat__colors.content .item.cabaret {
+      background: #D2527F;
+      color: #832244; }
+      section#flat__colors.content .item.cabaret:hover {
+        background: #d7668e; }
+    section#flat__colors.content .item.sunglo {
+      background: #E26A6A;
+      color: #ab2121; }
+      section#flat__colors.content .item.sunglo:hover {
+        background: #e67f7f; }
+    section#flat__colors.content .item.silver {
+      background: #BDC3C7;
+      color: #78848c; }
+      section#flat__colors.content .item.silver:hover {
+        background: #cbd0d3; }
+    section#flat__colors.content .item.grey {
+      background: #7F8C8D;
+      color: #424a4a; }
+      section#flat__colors.content .item.grey:hover {
+        background: #8c9899; }
