@@ -79,7 +79,7 @@
 
     while ($color = $colors->fetchArray()) {
 
-      $result = explode(",", $color['hex']);
+      $result = explode(" ", $color['hex']);
 
       echo '<div class="palette">';
       foreach($result as $hex) {
@@ -92,7 +92,6 @@
 
         list($r, $g, $b) = sscanf($hex, "%02x%02x%02x");
         $rgb = "$r $g $b";
-
 
         echo '
         <div class="color1">
@@ -107,9 +106,6 @@
     }
 
     ?>
-
-
-
 
     <!-- <div class="palette">
       <div class="color" style="background-color:#373737;"></div>

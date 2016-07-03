@@ -1,0 +1,30 @@
+.admin {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  .admin__header {
+    text-align: center;
+  }
+  .admin__logo {
+    text-decoration: none;
+  }
+  .admin__title {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $color2;
+    @media (max-width: 650px) {
+      color: $color1;
+    }
+    span {
+      font-size: 0.7em;
+      color: darken($color1, 30%);
+    }
+  }
+  hr {
+    margin: 50px 0 30px 0;
+    border: 0;
+    height: 1px;
+    background: darken($color1, 20%);
+  }
+}
