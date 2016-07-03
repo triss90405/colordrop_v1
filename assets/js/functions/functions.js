@@ -37,14 +37,14 @@ function bgChangeColor() {
                 'filter', 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#faa5a5", endColorstr="#857fe2", GradientType=1)');
   });
   gradientGreen.on('click', function(){
-    content.css('background', 'rgba(98,125,77,1)',
-                'background', '-moz-linear-gradient(45deg, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%)',
-                'background', '-webkit-gradient(left bottom, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)))',
-                'background', '-webkit-linear-gradient(45deg, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%)',
-                'background', '-o-linear-gradient(45deg, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%)',
-                'background', '-ms-linear-gradient(45deg, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%)',
-                'background', 'linear-gradient(45deg, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%)',
-                'filter', 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#627d4d", endColorstr="#1f3b08", GradientType=1 )');
+    content.css('background', 'rgba(0,135,68,1)',
+                'background', '-moz-linear-gradient(45deg, rgba(0,135,68,1) 0%, rgba(31,59,8,1) 100%)',
+                'background', '-webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,135,68,1)), color-stop(100%, rgba(31,59,8,1)))',
+                'background', '-webkit-linear-gradient(45deg, rgba(0,135,68,1) 0%, rgba(31,59,8,1) 100%)',
+                'background', '-o-linear-gradient(45deg, rgba(0,135,68,1) 0%, rgba(31,59,8,1) 100%)',
+                'background', '-ms-linear-gradient(45deg, rgba(0,135,68,1) 0%, rgba(31,59,8,1) 100%)',
+                'background', 'linear-gradient(45deg, rgba(0,135,68,1) 0%, rgba(31,59,8,1) 100%)',
+                'filter', 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#008744", endColorstr="#1f3b08", GradientType=1 )');
   });
   gradientBlue.on('click', function(){
     content.css('background', 'rgba(147,206,222,1)',

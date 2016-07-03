@@ -107,35 +107,6 @@
 
     ?>
 
-    <!-- <div class="palette">
-      <div class="color" style="background-color:#373737;"></div>
-      <div class="color" style="background-color:#DB3A1B;"></div>
-      <div class="color" style="background-color:#2C9AB7;"></div>
-      <div class="color" style="background-color:#F2F2F2;"></div>
-    </div>
-    <div class="palette__details">
-      <div class="color1">
-        <div class="color" style="background:#373737"></div>
-        <p class="hex">HEX: <span>#373737</span></p>
-        <p class="rgb">RGB: <span>55, 55, 55</span></p>
-      </div>
-      <div class="color2">
-        <div class="color" style="background:#DB3A1B"></div>
-        <p class="hex">HEX: <span>#DB3A1B</span></p>
-        <p class="rgb">RGB: <span>219, 58, 27</span></p>
-      </div>
-      <div class="color3">
-        <div class="color" style="background:#2C9AB7"></div>
-        <p class="hex">HEX: <span>#2C9AB7</span></p>
-        <p class="rgb">RGB: <span>44, 154, 183</span></p>
-      </div>
-      <div class="color4">
-        <div class="color" style="background:#F2F2F2"></div>
-        <p class="hex">HEX: <span>#F2F2F2</span></p>
-        <p class="rgb">RGB: <span>242, 242, 242</span></p>
-      </div>
-    </div> -->
-
   </section><!-- end .content -->
 
    <footer>
