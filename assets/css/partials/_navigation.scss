@@ -10,6 +10,9 @@
   @media (max-width: 650px) {
     display: none;
   }
+  @media (max-height: 500px) {
+    padding-top: 10px;
+  }
 
   .navigation__logo {
     text-decoration: none;
@@ -28,6 +31,9 @@
   .navigation__items {
     margin-top: 50px;
     padding: 0 40px;
+    @media (max-height: 500px) {
+      margin-top: 20px;
+    }
     a {
       color: darken($color1, 40%);
       display: block;
@@ -48,6 +54,9 @@
     margin-top: 50px;
     padding: 0 40px;
     text-align: left;
+    @media (max-height: 500px) {
+      margin-top: 20px;
+    }
     .bg__color {
       border-radius: 50%;
       width: 20px;

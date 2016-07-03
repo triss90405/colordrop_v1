@@ -1190,6 +1190,9 @@ body {
   @media (max-width: 650px) {
     .navigation {
       display: none; } }
+  @media (max-height: 500px) {
+    .navigation {
+      padding-top: 10px; } }
   .navigation .navigation__logo {
     text-decoration: none; }
   .navigation .navigation__title {
@@ -1202,6 +1205,9 @@ body {
   .navigation .navigation__items {
     margin-top: 50px;
     padding: 0 40px; }
+    @media (max-height: 500px) {
+      .navigation .navigation__items {
+        margin-top: 20px; } }
     .navigation .navigation__items a {
       color: #919191;
       display: block;
@@ -1216,6 +1222,9 @@ body {
     margin-top: 50px;
     padding: 0 40px;
     text-align: left; }
+    @media (max-height: 500px) {
+      .navigation .navigation__footer {
+        margin-top: 20px; } }
     .navigation .navigation__footer .bg__color {
       border-radius: 50%;
       width: 20px;
@@ -1373,9 +1382,13 @@ body {
         @media (max-height: 768px) {
           .content .palette__details .color1 .color, .content .palette__details .color2 .color, .content .palette__details .color3 .color, .content .palette__details .color4 .color {
             height: 50px; } }
+        @media (max-height: 500px) {
+          .content .palette__details .color1 .color, .content .palette__details .color2 .color, .content .palette__details .color3 .color, .content .palette__details .color4 .color {
+            height: 20px; } }
       .content .palette__details .color1 .hex, .content .palette__details .color1 .rgb, .content .palette__details .color2 .hex, .content .palette__details .color2 .rgb, .content .palette__details .color3 .hex, .content .palette__details .color3 .rgb, .content .palette__details .color4 .hex, .content .palette__details .color4 .rgb {
         color: #ababab;
-        font-size: 0.75em; }
+        font-size: 0.75em;
+        line-height: 1em; }
         .content .palette__details .color1 .hex span, .content .palette__details .color1 .rgb span, .content .palette__details .color2 .hex span, .content .palette__details .color2 .rgb span, .content .palette__details .color3 .hex span, .content .palette__details .color3 .rgb span, .content .palette__details .color4 .hex span, .content .palette__details .color4 .rgb span {
           color: #433F3F;
           font-size: 1rem; }
