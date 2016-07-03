@@ -1406,7 +1406,7 @@ input[type="text"] {
   input[type="text"]:nth-child(3) {
     margin-right: 4%; }
 
-button {
+button, .button {
   background: #2980D9;
   color: #F7F7F7;
   border: 0;
@@ -1415,9 +1415,9 @@ button {
   margin-top: 20px;
   text-align: center; }
   @media (max-width: 650px) {
-    button {
+    button, .button {
       width: 100%; } }
-  button:hover {
+  button:hover, .button:hover {
     background: #1f67b0; }
 
 .admin {
@@ -1587,3 +1587,48 @@ section#flat__colors.content {
       color: #424a4a; }
       section#flat__colors.content .item.grey:hover {
         background: #8c9899; }
+
+.dialog {
+  z-index: 10;
+  background: #F7F7F7;
+  width: 50%;
+  position: absolute;
+  left: calc(50% - 25%);
+  top: 0;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(67, 63, 63, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 180ms ease-in; }
+  @media (max-width: 600px) {
+    .dialog {
+      width: 90%;
+      left: calc(50% - 45%); } }
+  .dialog.dialog--active {
+    top: 10%;
+    visibility: visible;
+    opacity: 1;
+    transition: all 250ms ease-out; }
+  .dialog .dialog__close {
+    font-size: 2rem;
+    line-height: 2rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    padding: 15px;
+    transition: color 150ms ease; }
+    .dialog .dialog__close:hover {
+      color: #2980D9; }
+  .dialog .dialog__title {
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid #433F3F; }
+  .dialog .dialog__content {
+    font-size: 1.1rem;
+    line-height: 2rem; }
+  .dialog .dialog__action {
+    margin: 0;
+    font-size: 1rem; }
