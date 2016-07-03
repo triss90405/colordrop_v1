@@ -20,7 +20,7 @@
   <link rel="icon" type="image/png" href="/assets/img/admin/android-chrome-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="/assets/img/admin/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="/assets/img/admin/manifest.json">
-  <link rel="mask-icon" href="/assets/img/admin/safari-pinned-tab.svg" color="#33accf">
+  <link rel="mask-icon" href="/assets/img/admin/safari-pinned-tab.svg" color="#333333">
   <link rel="shortcut icon" href="/assets/img/admin/favicon.ico">
   <meta name="msapplication-TileColor" content="#333333">
   <meta name="msapplication-TileImage" content="/assets/img/admin/mstile-144x144.png">

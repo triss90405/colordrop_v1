@@ -15,5 +15,5 @@ $qry = $db->prepare(
     "INSERT INTO colors (hex, created, updated) VALUES (?, ?, ?)");
 $qry->execute(array($hex, $date, $date));
 
-$newURL = "/admin/index.php";
+$newURL = "/faYfe2PCsQGvRfaeIyjs/index.php";
 header('Location: '.$newURL);
