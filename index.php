@@ -81,7 +81,7 @@
 
     $db = new SQLite3('colors.db');
 
-    $colors = $db->query('SELECT * FROM colors');
+    $colors = $db->query('SELECT * FROM colors ORDER BY id DESC');
 
     while ($color = $colors->fetchArray()) {
 
