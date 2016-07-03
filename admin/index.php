@@ -1,8 +1,6 @@
 <?php
 
-
-
-
+//http://www.tutorialspoint.com/sqlite/sqlite_php.htm
 
 class MyDB extends SQLite3 {
   function __construct() {
@@ -16,8 +14,9 @@ if(!$db){
   echo "Opened database successfully<br>";
 }
 
+
 $sql =<<<EOF
-SELECT * from COLORS;
+  SELECT * from COLORS;
 EOF;
 
 $ret = $db->query($sql);
