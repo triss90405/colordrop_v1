@@ -1331,7 +1331,7 @@ body {
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); }
       @media (max-width: 650px) {
         .content .palette:hover {
-          transform: scale(11); } }
+          transform: scale(1); } }
     @media (max-width: 2200px) {
       .content .palette {
         width: 11.2857142857%; } }
