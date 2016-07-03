@@ -3,8 +3,8 @@
 <head>
    <title>ColorDrop</title>
    <meta charset="utf-8">
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <meta name="description" content="The last color palette you'll ever need!">
+   <meta name="author" content="Tristan White">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="/assets/css/main.css">
    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
