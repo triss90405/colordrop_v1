@@ -92,7 +92,7 @@
         //echo $result;
         echo '<div class="color" style="background-color:#'.$hex.'"></div>';
       }
-      echo '</div><div class="palette__details">';
+      echo '</div><div class="palette__details"><div class="top"><span class="sidebar__close">&#x2715;</span></div>';
 
       foreach($result as $hex) {
 
