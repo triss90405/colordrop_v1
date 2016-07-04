@@ -83,15 +83,18 @@ function detailsView() {
   var palette = $('.palette'),
       paletteDetails = $('.palette__details'),
       content = $('.content'),
-      closeButton = $('.sidebar__close');
+      closeButton = $('.sidebar__close'),
+      cookieAlert = $('.cookie');
   palette.on('click', function(){
     paletteDetails.removeClass('active');
     content.addClass('menu--active');
+    cookieAlert.addClass('menu--active');
     $(this).next(paletteDetails).toggleClass('active');
   });
   closeButton.on('click', function() {
     paletteDetails.removeClass('active');
     content.removeClass('menu--active');
+    cookieAlert.removeClass('menu--active');
   });
 }
 
@@ -135,9 +138,78 @@ function dialog() {
 
 }
 
+
+function cookie() {
+
+  var cookieAcceptButton = $('.cookie__accept'),
+      cookieDeclineButton = $('.cookie__decline'),
+      cookieAlert = $('.cookie');
+
+  cookieAcceptButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+
+  cookieDeclineButton.on('click', function() {
+    cookieAlert.fadeOut('slow');
+  });
+
+}
+
+
+
+function acceptCookies() {
+  $('#cookie_status_accept').on('click', function(e){
+
+    e.preventDefault();
+    var cookie_status = document.getElementById("cookie_status_accept").value;
+    // Returns successful data submission message when the entered information is stored in database.
+    var dataString = 'cookieStatus1=' + cookie_status;
+    if (cookie_status === '') {
+    } else {
+      // AJAX code to submit form.
+      $.ajax({
+        type: "POST",
+        url: "cookies_accept_post.php",
+        data: dataString,
+        cache: false,
+        success: function() {
+        }
+      });
+    }
+    return false;
+  });
+}
+
+function declineCookies() {
+  $('#cookie_status_decline').on('click', function(e){
+
+    e.preventDefault();
+    var cookie_status = document.getElementById("cookie_status_decline").value;
+    // Returns successful data submission message when the entered information is stored in database.
+    var dataString = 'cookieStatus1=' + cookie_status;
+    if (cookie_status === '') {
+    } else {
+      // AJAX code to submit form.
+      $.ajax({
+        type: "POST",
+        url: "cookies_decline_post.php",
+        data: dataString,
+        cache: false,
+        success: function() {
+        }
+      });
+    }
+    return false;
+  });
+}
+
+
 // Call fucntions
 $(document).ready(function() {
   bgChangeColor();
   detailsView();
   dialog();
+  cookie();
+  acceptCookies();
+  declineCookies();
 });

@@ -1,0 +1,101 @@
+
+// Colors
+$background-color: $color2;
+$highlight-color: $color3;
+$text-color: $color1;
+
+.cookie_form {
+  display: inline-block;
+}
+
+.cookie {
+  background: $background-color;
+  color: $text-color;
+  padding: 1rem 2%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  position: fixed;
+  left: 200px;
+  z-index: 100;
+  width: calc(100% - 200px);
+  transition: all 200ms ease-out;
+  &.menu--active {
+    width: calc(100% - 400px);
+    transition: all 150ms ease-in;
+  }
+  @media(max-width: 32rem) {
+    text-align: center;
+  }
+  @media(max-width: 650px) {
+    width: 100%;
+    left: 0;
+    &.menu--active {
+      width: calc(100% - 200px);
+    }
+  }
+  .cookie__message {
+    padding: 0.2rem 0;
+    margin: 0;
+    display: inline-block;
+    @media(max-width: 64rem) {
+      width: 100%;
+    }
+  }
+  .cookie__accept,
+  .cookie__decline,
+  .cookie__link {
+    padding: 0.6rem 0.8rem;
+    border: 0;
+    background: white;
+    margin: 0 0.5rem;
+    transition: background 150ms ease;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    &:focus{
+      outline: none;
+    }
+    @media(max-width: 64rem) {
+      margin: 0.5rem 1rem 0.5rem 0;
+    }
+    @media(max-width: 32rem) {
+      width: 100%;
+    }
+  }
+  .cookie__accept {
+    background: $highlight-color;
+    color: $text-color;
+    &:hover, &:focus {
+      background: lighten($highlight-color, 8%);
+    }
+    &:active {
+      background: lighten($highlight-color, 12%);
+    }
+  }
+  .cookie__decline {
+    background: darken($background-color, 8%);
+    color: $text-color;
+    &:hover, &:focus {
+      background: darken($background-color, 5%);
+    }
+    &:active {
+      background: darken($background-color, 8%);
+    }
+  }
+  .cookie__link {
+    color: $highlight-color;
+    background: none;
+    padding: 0.2rem 0;
+    margin: 0;
+    @media(max-width: 64rem) {
+      margin: 0.5rem 0;
+    }
+    &:hover, &:focus  {
+      text-decoration: underline;
+    }
+    @media(max-width: 32rem) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
