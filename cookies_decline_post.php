@@ -1,12 +1,11 @@
 <?php
 
+$cookie = htmlspecialchars($_POST["cookieStatus1"]);
+
 // unset cookies
-if (isset($_SERVER['HTTP_COOKIE'])) {
-    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
-    foreach($cookies as $cookie) {
-        $parts = explode('=', $cookie);
-        $name = trim($parts[0]);
-        setcookie($name, '', time()-1000);
-        setcookie($name, '', time()-1000, '/');
-    }
-}
+setcookie("cookie_status", $cookie, time() + (86400 * 356), "/");
+
+setcookie("colors", "", time() + (86400 * 356), "/"); 
+
+
+// 86400 = 1 day

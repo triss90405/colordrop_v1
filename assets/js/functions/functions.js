@@ -180,6 +180,7 @@ function acceptCookies() {
   });
 }
 
+
 function declineCookies() {
   $('#cookie_status_decline').on('click', function(e){
 
@@ -202,6 +203,7 @@ function declineCookies() {
     return false;
   });
 }
+
 
 
 // Call fucntions
