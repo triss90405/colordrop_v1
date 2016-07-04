@@ -84,6 +84,10 @@ body {
       text-align: right;
       position: relative;
       .sidebar__favourite {
+        background: none;
+        padding: 0;
+        float: left;
+        margin: 0;
         &:hover {
           strong {
             color: $color5;

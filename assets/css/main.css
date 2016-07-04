@@ -1372,30 +1372,35 @@ body {
       margin: 10px 10px 0 10px;
       text-align: right;
       position: relative; }
-      .content .palette__details .top .sidebar__favourite:hover strong {
-        color: #F1C40F; }
-      .content .palette__details .top .sidebar__favourite:hover svg path {
-        fill: #F1C40F; }
-      .content .palette__details .top .sidebar__favourite strong {
-        color: #c4c4c4;
-        font-size: 0.7em;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        position: absolute;
-        left: 2.5em;
-        top: 1.3em;
-        transition: all 100ms ease-in-out; }
-      .content .palette__details .top .sidebar__favourite svg {
+      .content .palette__details .top .sidebar__favourite {
+        background: none;
+        padding: 0;
         float: left;
-        height: 1.5em;
-        width: 1.5em;
-        cursor: pointer;
-        margin: 0.5em 0; }
-        .content .palette__details .top .sidebar__favourite svg path {
-          transition: all 100ms ease-in-out;
-          fill: #c4c4c4; }
-      .content .palette__details .top .sidebar__favourite.active svg path {
-        fill: #F1C40F; }
+        margin: 0; }
+        .content .palette__details .top .sidebar__favourite:hover strong {
+          color: #F1C40F; }
+        .content .palette__details .top .sidebar__favourite:hover svg path {
+          fill: #F1C40F; }
+        .content .palette__details .top .sidebar__favourite strong {
+          color: #c4c4c4;
+          font-size: 0.7em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          position: absolute;
+          left: 2.5em;
+          top: 1.3em;
+          transition: all 100ms ease-in-out; }
+        .content .palette__details .top .sidebar__favourite svg {
+          float: left;
+          height: 1.5em;
+          width: 1.5em;
+          cursor: pointer;
+          margin: 0.5em 0; }
+          .content .palette__details .top .sidebar__favourite svg path {
+            transition: all 100ms ease-in-out;
+            fill: #c4c4c4; }
+        .content .palette__details .top .sidebar__favourite.active svg path {
+          fill: #F1C40F; }
       .content .palette__details .top .sidebar__close {
         cursor: pointer; }
         .content .palette__details .top .sidebar__close:hover svg path {
@@ -1668,3 +1673,8 @@ section#flat__colors.content {
   .dialog .dialog__action {
     margin: 0;
     font-size: 1rem; }
+
+.add_favourites {
+  display: inline-block;
+  margin: 50px auto;
+  color: #2980D9; }
