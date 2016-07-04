@@ -1377,6 +1377,8 @@ body {
         padding: 0;
         float: left;
         margin: 0; }
+        .content .palette__details .top .sidebar__favourite:focus {
+          outline: none; }
         .content .palette__details .top .sidebar__favourite:hover strong {
           color: #F1C40F; }
         .content .palette__details .top .sidebar__favourite:hover svg path {
@@ -1403,6 +1405,8 @@ body {
           fill: #F1C40F; }
       .content .palette__details .top .sidebar__close {
         cursor: pointer; }
+        .content .palette__details .top .sidebar__close:focus {
+          outline: none; }
         .content .palette__details .top .sidebar__close:hover svg path {
           fill: #2980D9; }
         .content .palette__details .top .sidebar__close svg path {
