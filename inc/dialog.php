@@ -4,5 +4,5 @@
   <p class="dialog__content">
     ColorDrop.io is curated and maintained by <a href="https://tristanwhite.info" target="_target">Tristan White</a>
   </p>
-  <a class="button">Learn more &#8594;</a>
+  <a href="https://tristanwhite.info" target="_target" class="button">Learn more &#8594;</a>
 </div>
