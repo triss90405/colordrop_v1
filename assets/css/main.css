@@ -1370,13 +1370,39 @@ body {
       transition: all 150ms ease-in; }
     .content .palette__details .top {
       margin: 10px 10px 0 10px;
-      text-align: right; }
-      .content .palette__details .top .sidebar__close {
-        font-size: 2em;
+      text-align: right;
+      position: relative; }
+      .content .palette__details .top .sidebar__favourite:hover strong {
+        color: #F1C40F; }
+      .content .palette__details .top .sidebar__favourite:hover svg path {
+        fill: #F1C40F; }
+      .content .palette__details .top .sidebar__favourite strong {
+        color: #c4c4c4;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 2.5em;
+        top: 1.3em;
+        transition: all 100ms ease-in-out; }
+      .content .palette__details .top .sidebar__favourite svg {
+        float: left;
+        height: 1.5em;
+        width: 1.5em;
         cursor: pointer;
-        transition: color 100ms ease-in-out; }
-        .content .palette__details .top .sidebar__close:hover {
-          color: #2980D9; }
+        margin: 0.5em 0; }
+        .content .palette__details .top .sidebar__favourite svg path {
+          transition: all 100ms ease-in-out;
+          fill: #c4c4c4; }
+      .content .palette__details .top .sidebar__favourite.active svg path {
+        fill: #F1C40F; }
+      .content .palette__details .top .sidebar__close {
+        cursor: pointer; }
+        .content .palette__details .top .sidebar__close:hover svg path {
+          fill: #2980D9; }
+        .content .palette__details .top .sidebar__close svg path {
+          fill: #433F3F;
+          transition: color 100ms ease-in-out; }
     .content .palette__details .color1, .content .palette__details .color2, .content .palette__details .color3, .content .palette__details .color4 {
       padding: 10px; }
       @media (max-height: 768px) {

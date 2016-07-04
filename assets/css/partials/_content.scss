@@ -82,12 +82,61 @@ body {
     .top {
       margin: 10px 10px 0 10px;
       text-align: right;
-      .sidebar__close {
-        font-size: 2em;
-        cursor: pointer;
-        transition: color 100ms ease-in-out;
+      position: relative;
+      .sidebar__favourite {
         &:hover {
-          color: $color3;
+          strong {
+            color: $color5;
+          }
+          svg {
+            path {
+              fill: $color5;
+            }
+          }
+        }
+        strong {
+          color: darken($color1, 20%);
+          font-size: 0.7em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          position: absolute;
+          left: 2.5em;
+          top: 1.3em;
+          transition: all 100ms ease-in-out;
+        }
+        svg {
+          float: left;
+          height: 1.5em;
+          width: 1.5em;
+          cursor: pointer;
+          margin: 0.5em 0;
+          path {
+            transition: all 100ms ease-in-out;
+            fill: darken($color1, 20%);
+          }
+        }
+        &.active {
+          svg {
+            path {
+              fill: $color5;
+            }
+          }
+        }
+      }
+      .sidebar__close {
+        cursor: pointer;
+        &:hover {
+          svg {
+            path {
+              fill: $color3;
+            }
+          }
+        }
+        svg {
+          path {
+            fill: $color2;
+            transition: color 100ms ease-in-out;
+          }
         }
       }
     }
