@@ -16,8 +16,9 @@
   <a href="/" class="navigation__title">ColorDrop<span>.io</span></a>
 
   <div class="navigation__items">
-    <a href="/">Recent</a>
+    <a href="/">Color palettes</a>
     <a href="/favourites.php">Favourites</a>
+    <hr>
     <a href="/flat.php">Flat colors</a>
     <a href="#" class="dialog__trigger">About</a>
   </div>

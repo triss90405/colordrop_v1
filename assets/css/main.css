@@ -1208,6 +1208,11 @@ body {
     @media (max-height: 500px) {
       .navigation .navigation__items {
         margin-top: 20px; } }
+    .navigation .navigation__items hr {
+      border: 0;
+      height: 1px;
+      background: #919191;
+      margin-right: 100px; }
     .navigation .navigation__items a {
       color: #919191;
       display: block;
