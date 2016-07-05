@@ -1376,7 +1376,8 @@ body {
         background: none;
         padding: 0;
         float: left;
-        margin: 0; }
+        margin: -5px 0;
+        width: auto; }
         .content .palette__details .top .sidebar__favourite:focus {
           outline: none; }
         .content .palette__details .top .sidebar__favourite:hover strong {
@@ -1390,7 +1391,7 @@ body {
           letter-spacing: 1px;
           position: absolute;
           left: 2.5em;
-          top: 1.3em;
+          top: 1em;
           transition: all 100ms ease-in-out; }
         .content .palette__details .top .sidebar__favourite svg {
           float: left;
@@ -1457,7 +1458,8 @@ button, .button {
   padding: 15px 25px;
   cursor: pointer;
   margin-top: 20px;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none !important; }
   @media (max-width: 650px) {
     button, .button {
       width: 100%; } }
@@ -1674,6 +1676,8 @@ section#flat__colors.content {
     font-size: 1.1rem;
     line-height: 6rem;
     margin-top: 0.3rem; }
+    .dialog .dialog__content a {
+      color: #2980D9; }
   .dialog .dialog__action {
     margin: 0;
     font-size: 1rem; }

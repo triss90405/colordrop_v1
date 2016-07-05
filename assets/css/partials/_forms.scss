@@ -22,6 +22,7 @@ button, .button {
   cursor: pointer;
   margin-top: 20px;
   text-align: center;
+  text-decoration: none !important;
   @media (max-width: 650px) {
     width: 100%;
   }

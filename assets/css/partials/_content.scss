@@ -87,7 +87,8 @@ body {
         background: none;
         padding: 0;
         float: left;
-        margin: 0;
+        margin: -5px 0;
+        width: auto;
         &:focus {
           outline:none
         }
@@ -108,7 +109,7 @@ body {
           letter-spacing: 1px;
           position: absolute;
           left: 2.5em;
-          top: 1.3em;
+          top: 1em;
           transition: all 100ms ease-in-out;
         }
         svg {

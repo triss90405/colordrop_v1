@@ -49,6 +49,9 @@ $highlight-color: $color3;
     font-size: 1.1rem;
     line-height: 6rem;
     margin-top: 0.3rem;
+    a {
+      color: $color3;
+    }
   }
   .dialog__action {
     margin: 0;
