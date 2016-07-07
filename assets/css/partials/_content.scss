@@ -33,6 +33,7 @@ body {
     transition: all 100ms ease-out;
     cursor: pointer;
     position: relative;
+    backface-visibility: hidden;
     &:hover {
       transform: scale(1.1);
       transition: all 100ms ease-in;
