@@ -1375,7 +1375,7 @@ body {
     top: 0;
     right: -200px;
     transition: all 200ms ease-out;
-    overflow-y: scroll; }
+    overflow-y: hidden; }
     .content .palette__details.active {
       right: 0;
       box-shadow: -10px 0 25px rgba(0, 0, 0, 0.15);
