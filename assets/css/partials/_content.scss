@@ -70,6 +70,9 @@ body {
       top: -12px;
       left: -12px;
       fill: $color5;
+      #dropshadow {
+        filter: blur(20px) grayscale(20%);
+      }
     }
   }
   .palette__details {

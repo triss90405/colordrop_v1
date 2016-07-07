@@ -1366,6 +1366,8 @@ body {
       top: -12px;
       left: -12px;
       fill: #F1C40F; }
+      .content .palette #favourite #dropshadow {
+        filter: blur(20px) grayscale(20%); }
   .content .palette__details {
     background: #F7F7F7;
     height: 100vh;
