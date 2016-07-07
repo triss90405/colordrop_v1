@@ -17,9 +17,9 @@
 
   <div class="navigation__items">
     <a href="/">Color palettes</a>
-    <a href="/favourites.php">Favourites</a>
+    <a href="/favourites">Favourites</a>
     <hr>
-    <a href="/flat.php">Flat colors</a>
+    <a href="/flat">Flat colors</a>
     <a href="#" class="dialog__trigger">About</a>
   </div>
 
