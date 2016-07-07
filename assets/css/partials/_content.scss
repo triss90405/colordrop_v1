@@ -32,6 +32,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transition: all 100ms ease-out;
     cursor: pointer;
+    position: relative;
     &:hover {
       transform: scale(1.1);
       transition: all 100ms ease-in;
@@ -63,6 +64,12 @@ body {
       width: 25%;
       height: 65px;
     }
+    #favourite {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      fill: $color5;
+    }
   }
   .palette__details {
     background: $color1;
@@ -83,14 +90,20 @@ body {
       margin: 10px 10px 0 10px;
       text-align: right;
       position: relative;
-      .sidebar__favourite {
+      .sidebar__favourite--add,
+      .sidebar__favourite--remove {
         background: none;
         padding: 0;
         float: left;
         margin: -5px 0;
         width: auto;
         &:focus {
-          outline:none
+          outline: none;
+          svg {
+            path {
+              fill: $color5;
+            }
+          }
         }
         &:hover {
           strong {
@@ -128,6 +141,13 @@ body {
             path {
               fill: $color5;
             }
+          }
+        }
+      }
+      .sidebar__favourite--remove {
+        svg {
+          path {
+            fill: $color5;
           }
         }
       }

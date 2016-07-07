@@ -100,7 +100,6 @@ function detailsView() {
 
 
 function dialog() {
-
   var dialogBox = $('.dialog'),
       dialogTrigger = $('.dialog__trigger'),
       dialogClose = $('.dialog__close'),
@@ -135,31 +134,25 @@ function dialog() {
       dialogBox.removeClass("dialog--active");
     }
   });
-
 }
 
 
 function cookie() {
-
   var cookieAcceptButton = $('.cookie__accept'),
       cookieDeclineButton = $('.cookie__decline'),
       cookieAlert = $('.cookie');
-
   cookieAcceptButton.on('click', function() {
     cookieAlert.fadeOut('slow');
   });
-
   cookieDeclineButton.on('click', function() {
     cookieAlert.fadeOut('slow');
   });
-
 }
 
 
 
 function acceptCookies() {
   $('#cookie_status_accept').on('click', function(e){
-
     e.preventDefault();
     var cookie_status = document.getElementById("cookie_status_accept").value;
     // Returns successful data submission message when the entered information is stored in database.
@@ -183,7 +176,6 @@ function acceptCookies() {
 
 function declineCookies() {
   $('#cookie_status_decline').on('click', function(e){
-
     e.preventDefault();
     var cookie_status = document.getElementById("cookie_status_decline").value;
     // Returns successful data submission message when the entered information is stored in database.
@@ -203,8 +195,6 @@ function declineCookies() {
     return false;
   });
 }
-
-
 
 // Call fucntions
 $(document).ready(function() {

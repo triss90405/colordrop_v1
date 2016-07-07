@@ -1329,7 +1329,8 @@ body {
     display: flex;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 100ms ease-out;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .content .palette:hover {
       transform: scale(1.1);
       transition: all 100ms ease-in;
@@ -1359,6 +1360,11 @@ body {
     .content .palette .color {
       width: 25%;
       height: 65px; }
+    .content .palette #favourite {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      fill: #F1C40F; }
   .content .palette__details {
     background: #F7F7F7;
     height: 100vh;
@@ -1377,19 +1383,27 @@ body {
       margin: 10px 10px 0 10px;
       text-align: right;
       position: relative; }
-      .content .palette__details .top .sidebar__favourite {
+      .content .palette__details .top .sidebar__favourite--add,
+      .content .palette__details .top .sidebar__favourite--remove {
         background: none;
         padding: 0;
         float: left;
         margin: -5px 0;
         width: auto; }
-        .content .palette__details .top .sidebar__favourite:focus {
+        .content .palette__details .top .sidebar__favourite--add:focus,
+        .content .palette__details .top .sidebar__favourite--remove:focus {
           outline: none; }
-        .content .palette__details .top .sidebar__favourite:hover strong {
+          .content .palette__details .top .sidebar__favourite--add:focus svg path,
+          .content .palette__details .top .sidebar__favourite--remove:focus svg path {
+            fill: #F1C40F; }
+        .content .palette__details .top .sidebar__favourite--add:hover strong,
+        .content .palette__details .top .sidebar__favourite--remove:hover strong {
           color: #F1C40F; }
-        .content .palette__details .top .sidebar__favourite:hover svg path {
+        .content .palette__details .top .sidebar__favourite--add:hover svg path,
+        .content .palette__details .top .sidebar__favourite--remove:hover svg path {
           fill: #F1C40F; }
-        .content .palette__details .top .sidebar__favourite strong {
+        .content .palette__details .top .sidebar__favourite--add strong,
+        .content .palette__details .top .sidebar__favourite--remove strong {
           color: #c4c4c4;
           font-size: 0.7em;
           text-transform: uppercase;
@@ -1398,17 +1412,22 @@ body {
           left: 2.5em;
           top: 1em;
           transition: all 100ms ease-in-out; }
-        .content .palette__details .top .sidebar__favourite svg {
+        .content .palette__details .top .sidebar__favourite--add svg,
+        .content .palette__details .top .sidebar__favourite--remove svg {
           float: left;
           height: 1.5em;
           width: 1.5em;
           cursor: pointer;
           margin: 0.5em 0; }
-          .content .palette__details .top .sidebar__favourite svg path {
+          .content .palette__details .top .sidebar__favourite--add svg path,
+          .content .palette__details .top .sidebar__favourite--remove svg path {
             transition: all 100ms ease-in-out;
             fill: #c4c4c4; }
-        .content .palette__details .top .sidebar__favourite.active svg path {
+        .content .palette__details .top .sidebar__favourite--add.active svg path,
+        .content .palette__details .top .sidebar__favourite--remove.active svg path {
           fill: #F1C40F; }
+      .content .palette__details .top .sidebar__favourite--remove svg path {
+        fill: #F1C40F; }
       .content .palette__details .top .sidebar__close {
         cursor: pointer; }
         .content .palette__details .top .sidebar__close:focus {
