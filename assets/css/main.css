@@ -1178,6 +1178,30 @@ body {
   font-size: 16px;
   color: #433F3F; }
 
+.navigation__toggle {
+  display: none;
+  z-index: 20;
+  background: #F7F7F7;
+  padding: 10px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #433F3F; }
+  @media (max-width: 650px) {
+    .navigation__toggle {
+      display: block; } }
+  .navigation__toggle .navigation__toggle__button {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer; }
+    .navigation__toggle .navigation__toggle__button svg#menu__toggle path {
+      fill: #433F3F; }
+  .navigation__toggle .navigation__toggle__logo {
+    display: inline-block;
+    float: right; }
+
 .navigation {
   background: #F7F7F7;
   width: 200px;
@@ -1187,38 +1211,67 @@ body {
   box-shadow: 10px 0 25px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 3; }
+  .navigation.active {
+    display: block; }
   @media (max-width: 650px) {
     .navigation {
-      display: none; } }
+      padding-top: 50px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.45);
+      display: none;
+      margin-top: 60px;
+      z-index: 21; } }
   @media (max-height: 500px) {
     .navigation {
       padding-top: 10px; } }
   .navigation .navigation__logo {
     text-decoration: none; }
+    @media (max-width: 650px) {
+      .navigation .navigation__logo {
+        display: none; } }
   .navigation .navigation__title {
     font-size: 1.5em;
     text-decoration: none;
     color: #433F3F; }
+    @media (max-width: 650px) {
+      .navigation .navigation__title {
+        display: none; } }
     .navigation .navigation__title span {
       font-size: 0.7em;
       color: #ababab; }
   .navigation .navigation__items {
     margin-top: 50px;
     padding: 0 40px; }
+    @media (max-width: 650px) {
+      .navigation .navigation__items {
+        padding: 0;
+        text-align: center;
+        margin-top: 0; } }
     @media (max-height: 500px) {
       .navigation .navigation__items {
-        margin-top: 20px; } }
+        margin-top: 0px; } }
     .navigation .navigation__items hr {
       border: 0;
       height: 1px;
       background: #919191;
       margin-right: 100px; }
+      @media (max-width: 650px) {
+        .navigation .navigation__items hr {
+          display: none; } }
     .navigation .navigation__items a {
       color: #919191;
       display: block;
       text-align: left;
       padding: 10px 0;
       text-decoration: none; }
+      @media (max-width: 650px) {
+        .navigation .navigation__items a {
+          padding: 0;
+          text-align: center;
+          padding: 15px 0;
+          margin: 5px 0;
+          font-size: 1.3em; } }
       .navigation .navigation__items a:hover {
         text-decoration: underline; }
       .navigation .navigation__items a.selected {
@@ -1227,6 +1280,11 @@ body {
     margin-top: 50px;
     padding: 0 40px;
     text-align: left; }
+    @media (max-width: 650px) {
+      .navigation .navigation__footer {
+        padding: 0;
+        text-align: center;
+        padding: 20px 10px 40px 10px; } }
     @media (max-height: 500px) {
       .navigation .navigation__footer {
         margin-top: 20px; } }
@@ -1239,6 +1297,10 @@ body {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
       transition: all 100ms ease-out;
       cursor: pointer; }
+      @media (max-width: 650px) {
+        .navigation .navigation__footer .bg__color {
+          width: 50px;
+          height: 50px; } }
       .navigation .navigation__footer .bg__color:hover {
         transform: scale(1.2);
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -1321,7 +1383,8 @@ body {
   @media (max-width: 650px) {
     .content {
       width: 100vw;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-top: 60px; } }
   .content .palette {
     width: 9.5%;
     height: 65px;
@@ -1386,6 +1449,9 @@ body {
       margin: 10px 10px 0 10px;
       text-align: right;
       position: relative; }
+      @media (max-width: 650px) {
+        .content .palette__details .top {
+          margin-top: 70px; } }
       .content .palette__details .top .sidebar__favourite--add,
       .content .palette__details .top .sidebar__favourite--remove {
         background: none;
@@ -1662,7 +1728,7 @@ section#flat__colors.content {
         background: #8c9899; }
 
 .dialog {
-  z-index: 10;
+  z-index: 22;
   background: #F7F7F7;
   width: 50%;
   position: absolute;
@@ -1699,10 +1765,13 @@ section#flat__colors.content {
     margin: 0;
     padding: 0 0 15px 0;
     border-bottom: 2px solid #433F3F; }
+    @media (max-width: 650px) {
+      .dialog .dialog__title {
+        font-size: 1.3rem; } }
   .dialog .dialog__content {
-    font-size: 1.1rem;
-    line-height: 6rem;
-    margin-top: 0.3rem; }
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 3rem 0; }
     .dialog .dialog__content a {
       color: #2980D9; }
   .dialog .dialog__action {

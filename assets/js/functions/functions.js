@@ -196,6 +196,15 @@ function declineCookies() {
   });
 }
 
+
+function toggleMenu() {
+  var toggleButton = $('.navigation__toggle__button'),
+      navigation = $('.navigation');
+  toggleButton.on('click', function() {
+    navigation.toggleClass('active');
+  });
+}
+
 // Call fucntions
 $(document).ready(function() {
   bgChangeColor();
@@ -204,4 +213,5 @@ $(document).ready(function() {
   cookie();
   acceptCookies();
   declineCookies();
+  toggleMenu();
 });

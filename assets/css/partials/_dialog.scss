@@ -4,7 +4,7 @@ $highlight-color: $color3;
 
 
 .dialog {
-  z-index: 10;
+  z-index: 22;
   background: $bg-color;
   width: 50%;
   position: absolute;
@@ -44,11 +44,14 @@ $highlight-color: $color3;
     margin: 0;
     padding: 0 0 15px 0;
     border-bottom: 2px solid $text-color;
+    @media(max-width: 650px) {
+      font-size: 1.3rem;
+    }
   }
   .dialog__content {
-    font-size: 1.1rem;
-    line-height: 6rem;
-    margin-top: 0.3rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 3rem 0;
     a {
       color: $color3;
     }
