@@ -1164,6 +1164,20 @@ textarea {
   /* 2 */ }
 
 body {
+  opacity: 1;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+  -webkit-transition: -webkit-transform .4s ease-in-out, opacity .4s ease-in-out; }
+
+.wf-loading body {
+  opacity: 0;
+  transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px); }
+
+body {
   font-family: "proxima-nova-soft";
   font-size: 16px;
   color: #433F3F; }
