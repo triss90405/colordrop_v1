@@ -4,16 +4,13 @@ body {
   color: $color2;
 }
 
-
 // Avoid FOUT when using Typekit
-.navigation__logo, .navigation__title, .navigation__items, .navigation__footer, .content  {
+body {
   opacity: 0;
-  transform: translateY(-20px);
 }
-.wf-active  {
-  .navigation__logo, .navigation__title, .navigation__items, .navigation__footer, .content{
+.wf-active {
+  body {
     opacity: 1;
-    transform: translateY(0);
-    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+    transition: all .4s ease-in-out;
   }
 }

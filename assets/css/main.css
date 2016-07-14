@@ -1168,14 +1168,12 @@ body {
   font-size: 16px;
   color: #433F3F; }
 
-.navigation__logo, .navigation__title, .navigation__items, .navigation__footer, .content {
-  opacity: 0;
-  transform: translateY(-20px); }
+body {
+  opacity: 0; }
 
-.wf-active .navigation__logo, .wf-active .navigation__title, .wf-active .navigation__items, .wf-active .navigation__footer, .wf-active .content {
+.wf-active body {
   opacity: 1;
-  transform: translateY(0);
-  transition: transform .4s ease-in-out, opacity .4s ease-in-out; }
+  transition: all .4s ease-in-out; }
 
 .navigation__toggle {
   display: none;
