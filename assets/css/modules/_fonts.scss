@@ -1,18 +1,2 @@
-@font-face {
-  font-family: 'proxima_nova_alt_rgbold';
-  src: url('/assets/fonts/mark_simonson_-_proxima_nova_alt_bold-webfont.woff2') format('woff2'),
-       url('/assets/fonts/mark_simonson_-_proxima_nova_alt_bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'proxima_nova_alt_rgregular';
-  src: url('/assets/fonts/mark_simonson_-_proxima_nova_alt_regular-webfont.woff2') format('woff2'),
-       url('/assets/fonts/mark_simonson_-_proxima_nova_alt_regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-$regular: 'proxima_nova_alt_rgregular';
-$bold: 'proxima_nova_alt_rgbold';
+$regular: "proxima-nova-soft";
+$bold: "proxima-nova-soft"
