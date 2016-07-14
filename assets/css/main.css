@@ -1168,11 +1168,11 @@ body {
   font-size: 16px;
   color: #433F3F; }
 
-body {
+.navigation__logo, .navigation__title, .navigation__items, .navigation__footer, .content {
   opacity: 0;
   transform: translateY(-20px); }
 
-.wf-active body {
+.wf-active .navigation__logo, .wf-active .navigation__title, .wf-active .navigation__items, .wf-active .navigation__footer, .wf-active .content {
   opacity: 1;
   transform: translateY(0);
   transition: transform .4s ease-in-out, opacity .4s ease-in-out; }
