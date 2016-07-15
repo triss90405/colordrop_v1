@@ -197,7 +197,6 @@ function declineCookies() {
 }
 
 
-//
 // function addFavourite() {
 //   $('.sidebar__favourite--add').on('click', function(e){
 //     e.preventDefault();

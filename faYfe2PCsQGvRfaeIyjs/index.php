@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="wf-active">
 <head>
   <title>ColorDrop - Admin</title>
   <meta charset="utf-8">
