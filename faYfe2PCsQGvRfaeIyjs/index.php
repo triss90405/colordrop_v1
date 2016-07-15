@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="wf-active">
+<html lang="en">
 <head>
   <title>ColorDrop - Admin</title>
   <meta charset="utf-8">
   <meta name="description" content="Admin page">
   <meta name="author" content="Tristan White">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.typekit.net/jyd7pdv.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="/assets/css/main.css" charset="utf-8">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/admin/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/admin/apple-touch-icon-60x60.png">
@@ -30,6 +32,8 @@
 <body>
 
   <div class="admin">
+
+
 
     <div class="admin__header">
       <a href="/" class="admin__logo">
@@ -58,7 +62,10 @@
       <button type="submit" name="submit">Add Colors</button>
     </form>
 
+    <br>
 
+    <?php echo $_SERVER['DOCUMENT_ROOT']; ?>/
+    
   </div>
 
 </body>
