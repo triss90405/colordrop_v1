@@ -818,23 +818,23 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/functions\/functions.js": {
+	"\/assets\/js\/functions\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/functions\/functions.js",
-		"outputAbbreviatedPath": "\/assets\/js\/functions\/min\/functions-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/functions\/main.js",
+		"outputAbbreviatedPath": "\/assets\/js\/functions\/min\/main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/functions\/min\/functions-min.js": {
+	"\/assets\/js\/functions\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/functions\/min\/functions-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/functions\/min\/min\/functions-min-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/functions\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/functions\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -864,7 +864,7 @@
 		},
 	"\/assets\/js\/vendor\/min\/scrollreveal.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/vendor\/min\/scrollreveal.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/min\/scrollreveal.min-min.js",

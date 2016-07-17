@@ -1,3 +1,6 @@
+// @codekit-prepend '../vendor/min/jquery-3.0.0-min.js'
+// @codekit-prepend '../vendor/min/scrollreveal.min.js'
+
 // Change background color
 function bgChangeColor() {
   var content = $('body'),

@@ -1,7 +1,5 @@
 <footer>
-   <script src="/assets/js/vendor/min/jquery-3.0.0-min.js"></script>
-   <script src="/assets/js/vendor/min/scrollreveal.min.js"></script>
-   <script src="/assets/js/functions/min/functions-min.js"></script>
+   <script src="/assets/js/functions/min/main-min.js"></script>
 
    <script>
     // Changing the defaults
