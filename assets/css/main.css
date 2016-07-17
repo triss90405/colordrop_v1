@@ -1362,7 +1362,7 @@ body {
   transition: background 400ms ease-in-out; }
   @media (max-width: 700px) {
     body {
-      background: #433F3F; } }
+      background: #F7F7F7; } }
 
 .content {
   width: calc(100vw - 200px);
@@ -1383,7 +1383,7 @@ body {
       margin-left: 0;
       margin-top: 60px; } }
   .content .palette {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 20px;
     width: 20%;
@@ -1396,12 +1396,8 @@ body {
     position: relative;
     backface-visibility: hidden; }
     .content .palette:hover {
-      transform: scale(1.1);
       transition: all 100ms ease-in;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); }
-      @media (max-width: 700px) {
-        .content .palette:hover {
-          transform: scale(1); } }
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55); }
     @media (max-width: 1900px) {
       .content .palette {
         width: 20%;
