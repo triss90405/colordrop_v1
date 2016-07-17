@@ -1360,7 +1360,7 @@ body {
 
 body {
   transition: background 400ms ease-in-out; }
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     body {
       background: #433F3F; } }
 
@@ -1383,9 +1383,12 @@ body {
       margin-left: 0;
       margin-top: 60px; } }
   .content .palette {
-    width: 9.5%;
-    height: 65px;
-    margin: 20px 1.5%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+    height: auto;
+    margin: 20px 2.5%;
     display: flex;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 100ms ease-out;
@@ -1396,31 +1399,25 @@ body {
       transform: scale(1.1);
       transition: all 100ms ease-in;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); }
-      @media (max-width: 650px) {
+      @media (max-width: 700px) {
         .content .palette:hover {
           transform: scale(1); } }
-    @media (max-width: 2200px) {
-      .content .palette {
-        width: 11.2857142857%; } }
     @media (max-width: 1900px) {
-      .content .palette {
-        width: 13.6666666667%; } }
-    @media (max-width: 1500px) {
       .content .palette {
         width: 20%;
         margin: 20px 2.5%; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
       .content .palette {
         width: 28.3333333333%; } }
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
       .content .palette {
         width: 45%; } }
-    @media (max-width: 650px) {
+    @media (max-width: 700px) {
       .content .palette {
         width: 95%; } }
     .content .palette .color {
       width: 25%;
-      height: 65px; }
+      height: 150px; }
     .content .palette #favourite {
       position: absolute;
       top: -12px;
@@ -1446,7 +1443,7 @@ body {
       margin: 10px 10px 0 10px;
       text-align: right;
       position: relative; }
-      @media (max-width: 650px) {
+      @media (max-width: 700px) {
         .content .palette__details .top {
           margin-top: 70px; } }
       .content .palette__details .top .sidebar__favourite--add,
@@ -1504,7 +1501,7 @@ body {
           fill: #433F3F;
           transition: color 100ms ease-in-out; }
     .content .palette__details .color1, .content .palette__details .color2, .content .palette__details .color3, .content .palette__details .color4 {
-      padding: 10px; }
+      padding: 5px 20px; }
       @media (max-height: 768px) {
         .content .palette__details .color1, .content .palette__details .color2, .content .palette__details .color3, .content .palette__details .color4 {
           padding: 5px 10px; }

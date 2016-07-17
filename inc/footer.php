@@ -1,6 +1,15 @@
 <footer>
    <script src="/assets/js/vendor/min/jquery-3.0.0-min.js"></script>
+   <script src="/assets/js/vendor/min/scrollreveal.min.js"></script>
    <script src="/assets/js/functions/min/functions-min.js"></script>
+
+   <script>
+    // Changing the defaults
+    window.sr = ScrollReveal({ reset: true });
+
+    // Customizing a reveal set
+    sr.reveal('.palette', { duration: 200 });
+  </script>
 
    <script>
    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
