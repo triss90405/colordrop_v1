@@ -272,7 +272,7 @@ function gridderLink() {
       gridderLinBoxRemove = $('.gridder_link_close');
   setTimeout(function() {
     gridderLinkBox.addClass('visible');
-  }, 13000);
+  }, 25000);
   gridderLinBoxRemove.on('click', function() {
     gridderLinkBox.removeClass('visible');
   });
