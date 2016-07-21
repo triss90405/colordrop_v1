@@ -63,7 +63,9 @@ body {
       position: absolute;
       top: -12px;
       left: -12px;
-      fill: $color5;
+      path {
+        fill: $color5;
+      }
       #dropshadow {
         filter: blur(20px) grayscale(20%);
       }
@@ -84,10 +86,22 @@ body {
       box-shadow: -10px 0 25px rgba(0,0,0,0.15);
       transition: all 150ms ease-in;
     }
+    .button {
+      margin: 20px;
+      display: block;
+      font-size: 0.87rem;
+    }
+    hr {
+      border: 0;
+      background: darken($color1, 20%);
+      height: 1px;
+    }
     .top {
-      margin: 10px 10px 0 10px;
+      padding: 10px 10px 0 10px;
+      margin-bottom: 10px;
       text-align: right;
       position: relative;
+      border-bottom: 1px solid darken($color1, 20%);
       @media(max-width: 700px) {
         margin-top: 70px;
       }
@@ -122,8 +136,8 @@ body {
           text-transform: uppercase;
           letter-spacing: 1px;
           position: absolute;
-          left: 2.5em;
-          top: 1em;
+          left: 3em;
+          top: 1.8em;
           transition: all 100ms ease-in-out;
         }
         svg {
@@ -157,6 +171,11 @@ body {
         &:focus {
           outline:none
         }
+        svg {
+          path {
+            fill: darken($color1, 20%);
+          }
+        }
         &:hover {
           svg {
             path {
@@ -174,7 +193,7 @@ body {
     }
     .color1, .color2, .color3, .color4 {
       padding: 5px 20px;
-      @media (max-height: 768px) {
+      @media (max-height: 830px) {
         padding: 5px 10px;
         &:first-child {
           padding: 10px 10px 5px 10px;
@@ -184,10 +203,10 @@ body {
         width: 100%;
         height: 100px;
         box-shadow: 0 0 25px rgba(0,0,0,0.3);
-        @media (max-height: 768px) {
+        @media (max-height: 830px) {
           height: 50px;
         }
-        @media (max-height: 520px) {
+        @media (max-height: 630px) {
           height: 20px;
         }
       }
