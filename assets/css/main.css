@@ -1374,9 +1374,9 @@ body {
   transition: all 200ms ease-in-out; }
   .content.menu--active {
     width: calc(100vw - 400px); }
-    @media (max-width: 650px) {
+    @media (max-width: 768px) {
       .content.menu--active {
-        width: calc(100vw - 200px); } }
+        width: 100vw; } }
   @media (max-width: 650px) {
     .content {
       width: 100vw;
@@ -1432,13 +1432,19 @@ body {
     right: -200px;
     transition: all 200ms ease-out;
     overflow-y: hidden; }
+    @media (max-width: 768px) {
+      .content .palette__details {
+        width: 100%;
+        right: -100%;
+        overflow: scroll !important; } }
     .content .palette__details.active {
       right: 0;
       box-shadow: -10px 0 25px rgba(0, 0, 0, 0.15);
       transition: all 150ms ease-in; }
     .content .palette__details .button {
-      margin: 20px;
+      margin: 20px 20px 100px 20px;
       display: block;
+      width: auto;
       font-size: 0.87rem; }
     .content .palette__details hr {
       border: 0;
@@ -1530,6 +1536,9 @@ body {
         color: #ababab;
         font-size: 0.75em;
         line-height: 1em; }
+        @media (max-width: 700px) {
+          .content .palette__details .color1 .hex, .content .palette__details .color1 .rgb, .content .palette__details .color2 .hex, .content .palette__details .color2 .rgb, .content .palette__details .color3 .hex, .content .palette__details .color3 .rgb, .content .palette__details .color4 .hex, .content .palette__details .color4 .rgb {
+            line-height: 0.8em; } }
         .content .palette__details .color1 .hex span, .content .palette__details .color1 .rgb span, .content .palette__details .color2 .hex span, .content .palette__details .color2 .rgb span, .content .palette__details .color3 .hex span, .content .palette__details .color3 .rgb span, .content .palette__details .color4 .hex span, .content .palette__details .color4 .rgb span {
           color: #433F3F;
           font-size: 1rem; }

@@ -15,8 +15,8 @@ body {
   transition: all 200ms ease-in-out;
   &.menu--active {
     width: calc(100vw - 400px);
-    @media (max-width: 650px) {
-      width: calc(100vw - 200px);
+    @media (max-width: 768px) {
+      width: 100vw;
     }
   }
   @media (max-width: 650px) {
@@ -81,14 +81,21 @@ body {
     right: -200px;
     transition: all 200ms ease-out;
     overflow-y: hidden;
+    @media(max-width: 768px) {
+      width: 100%;
+      right: -100%;
+      overflow: scroll !important;
+    }
     &.active {
       right: 0;
       box-shadow: -10px 0 25px rgba(0,0,0,0.15);
       transition: all 150ms ease-in;
+
     }
     .button {
-      margin: 20px;
+      margin: 20px 20px 100px 20px;
       display: block;
+      width: auto;
       font-size: 0.87rem;
     }
     hr {
@@ -214,6 +221,9 @@ body {
         color: darken($color1, 30%);
         font-size: 0.75em;
         line-height: 1em;
+        @media(max-width: 700px) {
+          line-height: 0.8em;
+        }
         span {
           color: $color2;
           font-size: 1rem;
