@@ -65,6 +65,11 @@
             </div>
             ';
           }
+          echo '<hr><a href="download.php?colors=';
+          foreach($result as $hex) {
+            echo $hex . ',';
+          }
+          echo '"class="button">Download palette</a>';
           echo '</div>';
 
         }
