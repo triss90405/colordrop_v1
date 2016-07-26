@@ -9,6 +9,7 @@
   <script src="https://use.typekit.net/jyd7pdv.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" href="/assets/css/main.css" charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/vendor/spectrum.css" charset="utf-8">
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/admin/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/admin/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/admin/apple-touch-icon-72x72.png">
@@ -33,8 +34,6 @@
 
   <div class="admin">
 
-
-
     <div class="admin__header">
       <a href="/" class="admin__logo">
         <svg width="83px" height="99px" viewBox="0 0 83 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -55,17 +54,15 @@
     <hr>
 
     <form class="new_color" action="addColorsPost.php" method="post">
-      <input type="text" name="color1" value="" placeholder="FFFFFF" maxlength="6" required>
-      <input type="text" name="color2" value="" placeholder="3F2F2F" maxlength="6" required>
-      <input type="text" name="color3" value="" placeholder="FF0000" maxlength="6" required>
-      <input type="text" name="color4" value="" placeholder="F06D06" maxlength="6" required>
+      <input type="text" class="color" name="color1" value="" placeholder="FFFFFF" maxlength="6" width="50vw">
+      <input type="text" class="color" name="color2" value="" placeholder="3F2F2F" maxlength="6">
+      <input type="text" class="color" name="color3" value="" placeholder="FF0000" maxlength="6">
+      <input type="text" class="color" name="color4" value="" placeholder="F06D06" maxlength="6"><br>
       <button type="submit" name="submit">Add Colors</button>
     </form>
 
     <br>
 
-    <?php echo $_SERVER['DOCUMENT_ROOT']; ?>/
-    
   </div>
 
 </body>
