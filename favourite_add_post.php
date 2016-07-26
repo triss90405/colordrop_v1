@@ -10,5 +10,6 @@ if (!isset($_COOKIE["colors"])) {
 }
 
 if (isset($_SERVER["HTTP_REFERER"])) {
-  header("Location: " . $_SERVER["HTTP_REFERER"]);
+  //header("Location: " . $_SERVER["HTTP_REFERER"]);
+  header("Location:index.php#" . $color);
 }
