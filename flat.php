@@ -20,7 +20,7 @@
   		<div class="tiny-3">
   			<div id="blue" onclick="selectText('blue')" class="item blue"><p>#2980D9</p></div>
   			<div id="river" onclick="selectText('river')" class="item river"><p>#3498DB</p></div>
-  			<div id="purple" onclick="selectText('purple')" class="item purple"><p>#34495E</p></div>
+  			<div id="purple" onclick="selectText('purple')" class="item purple"><p>#8E44AD</p></div>
   			<div id="amethyst" onclick="selectText('amethyst')" class="item amethyst"><p>#9B59B6</p></div>
   			<div id="cabaret" onclick="selectText('cabaret')" class="item cabaret"><p>#D2527F</p></div>
   			<div id="sunglo" onclick="selectText('sunglo')" class="item sunglo"><p>#E26A6A</p></div>
@@ -47,5 +47,5 @@
   	</div>
 
   </section><!-- end .content -->
-  
+
   <?php include('inc/footer.php'); ?>
