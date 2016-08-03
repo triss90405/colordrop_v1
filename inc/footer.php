@@ -8,6 +8,25 @@
       It's a css flexbox grid </p>
     </div> -->
 
+
+    <?php
+
+    if ($_COOKIE['cookie_status'] != "1") {
+      ?>
+      <div class="cookie">
+        <p class="cookie__message">We use cookies to save your favourite color palettes. We store no personal details.</p>
+        <form class="cookie_form">
+          <button type="submit" class="cookie__accept" name="cookie_status" id="cookie_status_accept" value="1">Accept cookies</button>
+        </form>
+        <form class="cookie_form">
+          <button type="submit" class="cookie__decline" name="cookie_status" id="cookie_status_decline" value="0">Decline cookies</button>
+        </form>
+        <a class="cookie__link" href="http://www.allaboutcookies.org/" title="Learn all about cookies and why sites use them" target="_blank">What are cookies?</a>
+      </div>
+      <?php
+    }
+    ?>
+
     <script src="/assets/js/functions/min/main-min.js"></script>
 
     <script>
