@@ -1,7 +1,5 @@
 <?php include('inc/header.php'); ?>
 
-  <?php include('inc/dialog.php'); ?>
-
   <?php include('inc/navigation.php'); ?>
 
   <section id="flat__colors" class="content">
@@ -47,5 +45,7 @@
   	</div>
 
   </section><!-- end .content -->
+
+  <?php include('inc/dialog.php'); ?>
 
   <?php include('inc/footer.php'); ?>

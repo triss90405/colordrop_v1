@@ -1,7 +1,5 @@
 <?php include('inc/header.php'); ?>
 
-  <?php include('inc/dialog.php'); ?>
-
   <?php include('inc/navigation.php'); ?>
 
   <section class="content">
@@ -82,4 +80,6 @@
 
   </section><!-- end .content -->
 
+  <?php include('inc/dialog.php'); ?>
+  
   <?php include('inc/footer.php'); ?>

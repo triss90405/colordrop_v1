@@ -278,6 +278,7 @@ function toggleMenu() {
 //   });
 // }
 
+
 // Call fucntions
 $(document).ready(function() {
   bgChangeColor();

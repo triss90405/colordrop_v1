@@ -1,33 +1,3 @@
-.navigation__toggle {
-  display: none;
-  z-index: 20;
-  background: $color1;
-  padding: 10px;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-bottom: 2px solid $color2;
-  @media (max-width: 768px) {
-    display: block;
-  }
-  .navigation__toggle__button {
-    display: inline-block;
-    padding: 0 10px;
-    cursor: pointer;
-    svg#menu__toggle {
-      path {
-        fill: $color2;
-      }
-    }
-  }
-  .navigation__toggle__logo {
-    display: inline-block;
-    float: right;
-  }
-}
-
 .navigation {
   background: $color1;
   width: 200px;
@@ -37,36 +7,28 @@
   box-shadow: 10px 0 25px rgba(0,0,0,0.15);
   position: fixed;
   z-index: 3;
-  &.active {
-    display: block;
-  }
   @media (max-width: 768px) {
-    padding-top: 50px;
-    width: 100%;
+    width: 100vw;
+    background: none;
     height: auto;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.45);
-    display: none;
-    margin-top: 60px;
+    box-shadow: none;
+    display: block;
+    position: relative;
     z-index: 21;
   }
-  @media (max-height: 500px) {
+  @media (max-height: 800px) {
     padding-top: 10px;
   }
 
   .navigation__logo {
     text-decoration: none;
-    @media (max-width: 768px) {
-      display: none;
-    }
+    display: block;
   }
 
   .navigation__title {
     font-size: 1.5em;
     text-decoration: none;
     color: $color2;
-    @media (max-width: 768px) {
-      display: none;
-    }
     span {
       font-size: 0.7em;
       color: darken($color1, 30%);
@@ -74,14 +36,14 @@
   }
 
   .navigation__items {
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 0 40px;
     @media (max-width: 768px) {
       padding: 0;
       text-align: center;
-      margin-top: 0;
+      margin: 20px;
     }
-    @media (max-height: 500px) {
+    @media (max-height: 800px) {
       margin-top: 0px;
     }
     hr {
@@ -100,11 +62,9 @@
       padding: 10px 0;
       text-decoration: none;
       @media (max-width: 768px) {
-        padding: 0;
-        text-align: center;
-        padding: 15px 0;
-        margin: 5px 0;
-        font-size: 1.3em;
+        display: inline-block;
+        font-size: 1.2rem;
+        margin: 5px 10px;
       }
       &:hover {
         text-decoration: underline;
@@ -117,16 +77,15 @@
 
 
   .navigation__footer {
-    margin-top: 50px;
     padding: 0 40px;
     text-align: left;
+    margin-top: 40px;
     @media (max-width: 768px) {
       padding: 0;
       text-align: center;
-      padding: 20px 10px 40px 10px;
     }
-    @media (max-height: 500px) {
-      margin-top: 20px;
+    @media (max-height: 800px) {
+      margin-top: 10px;
     }
     .bg__color {
       border-radius: 50%;
@@ -138,8 +97,9 @@
       transition: all 100ms ease-out;
       cursor: pointer;
       @media (max-width: 768px) {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
+        margin: 5px;
       }
       &:hover {
         transform: scale(1.2);
