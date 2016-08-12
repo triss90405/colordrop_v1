@@ -58,7 +58,7 @@
             echo '
             <div class="color1">
               <div class="color" style="background:#'.$hex.'"></div>
-              <p class="hex">HEX: <span>#'.$hex.'</span></p>
+              <p class="hex">HEX: <span class="hexcode">#'.$hex.'</span></p>
               <p class="rgb">RGB: <span>'.$rgb.'</span></p>
             </div>
             ';
@@ -81,5 +81,5 @@
   </section><!-- end .content -->
 
   <?php include('inc/dialog.php'); ?>
-  
+
   <?php include('inc/footer.php'); ?>

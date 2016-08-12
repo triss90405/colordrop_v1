@@ -4,6 +4,13 @@ body {
   color: $color2;
 }
 
+* {
+  &::selection {
+    color: $color1;
+    background: $color3;
+  }
+}
+
 // Avoid FOUT when using Typekit
 body {
   opacity: 0;

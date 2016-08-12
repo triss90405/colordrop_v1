@@ -44,6 +44,11 @@ section#flat__colors.content {
     p {
       font-size: 1.5rem;
       transition: all 150ms ease-in-out;
+      user-select: all;
+      &:selection {
+        color: $color1;
+        background: $color3;
+      }
       @media(max-width: 48rem) {
         transform: rotate(-90deg);
       }
