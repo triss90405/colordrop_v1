@@ -1200,7 +1200,7 @@ body {
       box-shadow: none;
       display: block;
       position: relative;
-      z-index: 21; } }
+      z-index: 1; } }
   @media (max-height: 800px) {
     .navigation {
       padding-top: 10px; } }
