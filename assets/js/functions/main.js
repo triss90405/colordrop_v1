@@ -278,35 +278,36 @@ function toggleMenu() {
 
 
 function copyMessage() {
-  $(window).resize(function() {
-    var wWidth = $(window).width();
-    if(wWidth > 768) {
-      new Clipboard('.hex');
-      new Clipboard('.rgb');
-      var hexCode = $('.hexcode'),
-          hexButton = $('.hex'),
-          rgbCode = $('.rgbcode'),
-          rgbButton = $('.rgb');
 
-      hexButton.on('click', function() {
-        $(this).children(hexCode).addClass('visible');
-        function hideCopy(){
-          hexButton.children(hexCode).removeClass('visible');
-        }
-        setTimeout(hideCopy, 2500);
-      });
+  var wWidth = $(window).width();
+  
+  if(wWidth > 768) {
+    new Clipboard('.hex');
+    new Clipboard('.rgb');
+    var hexCode = $('.hexcode'),
+        hexButton = $('.hex'),
+        rgbCode = $('.rgbcode'),
+        rgbButton = $('.rgb');
 
-      rgbButton.on('click', function() {
-        $(this).children(rgbCode).addClass('visible');
-        function hideCopy(){
-          rgbButton.children(rgbCode).removeClass('visible');
-        }
-        setTimeout(hideCopy, 2500);
-      });
-    } else {
-      // Disable the auto copy for mobile
-    }
-  });
+    hexButton.on('click', function() {
+      $(this).children(hexCode).addClass('visible');
+      function hideCopy(){
+        hexButton.children(hexCode).removeClass('visible');
+      }
+      setTimeout(hideCopy, 2500);
+    });
+
+    rgbButton.on('click', function() {
+      $(this).children(rgbCode).addClass('visible');
+      function hideCopy(){
+        rgbButton.children(rgbCode).removeClass('visible');
+      }
+      setTimeout(hideCopy, 2500);
+    });
+  } else {
+    // Disable the auto copy for mobile
+  }
+
 }
 
 
