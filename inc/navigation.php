@@ -15,6 +15,8 @@
 
   <a href="/" class="navigation__title">ColorDrop<span>.io</span></a>
 
+  <span class="navigation__toggle__button">Menu</span>
+
   <div class="navigation__items">
     <a href="/">Color palettes</a>
     <a href="/favourites.php">Favourites</a>
@@ -26,7 +28,6 @@
   <div class="navigation__footer">
     <span class="bg__color blue"></span>
     <span class="bg__color red"></span>
-    <span class="bg__color yellow"></span>
     <span class="bg__color light"></span>
     <span class="bg__color dark"></span>
     <span class="bg__color gradient--pink"></span>
@@ -36,8 +37,8 @@
     <span class="bg__color gradient--grey"></span>
   </div>
 
-  <div class="ad">
-    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=colordropio" id="_carbonads_js"></script>
-  </div>
-
 </nav><!-- end .navigation -->
+
+<div class="ad">
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=colordropio" id="_carbonads_js"></script>
+</div>

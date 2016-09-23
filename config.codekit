@@ -890,45 +890,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/vendor\/jquery-3.0.0.js": {
+	"\/assets\/js\/vendor\/jquery-3.1.0.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/vendor\/jquery-3.0.0.js",
-		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/jquery-3.0.0-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/vendor\/jquery-3.1.0.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/jquery-3.1.0-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/vendor\/min\/jquery-3.0.0-min.js": {
+	"\/assets\/js\/vendor\/min\/jquery-3.1.0-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/vendor\/min\/jquery-3.0.0-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/min\/jquery-3.0.0-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/vendor\/min\/scrollreveal.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/vendor\/min\/scrollreveal.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/min\/scrollreveal.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/vendor\/scrollreveal.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/vendor\/scrollreveal.js",
-		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/scrollreveal-min.js",
+		"inputAbbreviatedPath": "\/assets\/js\/vendor\/min\/jquery-3.1.0-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/vendor\/min\/min\/jquery-3.1.0-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

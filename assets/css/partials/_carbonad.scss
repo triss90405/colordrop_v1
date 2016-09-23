@@ -5,15 +5,21 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 10px;
-  margin: 20px 7.5%;
-  width: 85%;
-  margin-top: 40px;
-  @media (max-height: 800px) {
+  width: 170px;
+  position: fixed;
+  z-index: 3;
+  left: 15px;
+  top: 600px;
+  @media (max-height: 860px) {
     margin-top: 10px;
+    top: 480px;
   }
   @media (max-width: 768px) {
-    margin: 20px 2.5%;
+    margin: 0 2.5%;
     width: 95%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
   }
   border-radius: 4px;
   padding: 1em;

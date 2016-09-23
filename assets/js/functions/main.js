@@ -1,12 +1,10 @@
-// @codekit-prepend '../vendor/min/jquery-3.0.0-min.js'
-// @codekit-prepend '../vendor/min/scrollreveal.min.js'
+// @codekit-prepend '../vendor/min/jquery-3.1.0-min.js'
 
 // Change background color
 function bgChangeColor() {
   var content = $('body'),
       blue = $('.bg__color.blue'),
       red = $('.bg__color.red'),
-      yellow = $('.bg__color.yellow'),
       light = $('.bg__color.light'),
       dark = $('.bg__color.dark'),
       gradientPink = $('.bg__color.gradient--pink'),
@@ -19,9 +17,6 @@ function bgChangeColor() {
   });
   red.on('click', function(){
     content.css('background-color', '#E74C3C');
-  });
-  yellow.on('click', function(){
-    content.css('background-color', '#F1C40F');
   });
   light.on('click', function(){
     content.css('background-color', '#F7F7F7');
@@ -87,12 +82,14 @@ function detailsView() {
       paletteDetails = $('.palette__details'),
       content = $('.content'),
       closeButton = $('.sidebar__close'),
-      cookieAlert = $('.cookie');
+      cookieAlert = $('.cookie'),
+      navigation = $('nav');
   palette.on('click', function(){
     paletteDetails.removeClass('active');
     content.addClass('menu--active');
     cookieAlert.addClass('menu--active');
     $(this).next(paletteDetails).toggleClass('active');
+    navigation.toggleClass('hide');
   });
   closeButton.on('click', function() {
     paletteDetails.removeClass('active');
@@ -261,7 +258,7 @@ function declineCookies() {
 
 function toggleMenu() {
   var toggleButton = $('.navigation__toggle__button'),
-      navigation = $('.navigation');
+      navigation = $('.navigation__items');
   toggleButton.on('click', function() {
     navigation.toggleClass('active');
   });
