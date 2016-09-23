@@ -1564,6 +1564,51 @@ body {
              -moz-user-select: all;
               -ms-user-select: all;
                   user-select: all; }
+        .content .palette__details .color1 .hex span.rgbcode, .content .palette__details .color1 .rgb span.rgbcode, .content .palette__details .color2 .hex span.rgbcode, .content .palette__details .color2 .rgb span.rgbcode, .content .palette__details .color3 .hex span.rgbcode, .content .palette__details .color3 .rgb span.rgbcode, .content .palette__details .color4 .hex span.rgbcode, .content .palette__details .color4 .rgb span.rgbcode {
+          -webkit-user-select: all;
+             -moz-user-select: all;
+              -ms-user-select: all;
+                  user-select: all; }
+        .content .palette__details .color1 .hex span.rgbcode,
+        .content .palette__details .color1 .hex span.hexcode, .content .palette__details .color1 .rgb span.rgbcode,
+        .content .palette__details .color1 .rgb span.hexcode, .content .palette__details .color2 .hex span.rgbcode,
+        .content .palette__details .color2 .hex span.hexcode, .content .palette__details .color2 .rgb span.rgbcode,
+        .content .palette__details .color2 .rgb span.hexcode, .content .palette__details .color3 .hex span.rgbcode,
+        .content .palette__details .color3 .hex span.hexcode, .content .palette__details .color3 .rgb span.rgbcode,
+        .content .palette__details .color3 .rgb span.hexcode, .content .palette__details .color4 .hex span.rgbcode,
+        .content .palette__details .color4 .hex span.hexcode, .content .palette__details .color4 .rgb span.rgbcode,
+        .content .palette__details .color4 .rgb span.hexcode {
+          position: relative; }
+          .content .palette__details .color1 .hex span.rgbcode:after,
+          .content .palette__details .color1 .hex span.hexcode:after, .content .palette__details .color1 .rgb span.rgbcode:after,
+          .content .palette__details .color1 .rgb span.hexcode:after, .content .palette__details .color2 .hex span.rgbcode:after,
+          .content .palette__details .color2 .hex span.hexcode:after, .content .palette__details .color2 .rgb span.rgbcode:after,
+          .content .palette__details .color2 .rgb span.hexcode:after, .content .palette__details .color3 .hex span.rgbcode:after,
+          .content .palette__details .color3 .hex span.hexcode:after, .content .palette__details .color3 .rgb span.rgbcode:after,
+          .content .palette__details .color3 .rgb span.hexcode:after, .content .palette__details .color4 .hex span.rgbcode:after,
+          .content .palette__details .color4 .hex span.hexcode:after, .content .palette__details .color4 .rgb span.rgbcode:after,
+          .content .palette__details .color4 .rgb span.hexcode:after {
+            opacity: 0;
+            visibility: hidden;
+            letter-spacing: 1px;
+            content: "COPIED";
+            font-size: 12px;
+            background: #433F3F;
+            color: #F7F7F7;
+            position: absolute;
+            right: calc(-100% - 5px);
+            top: 0px;
+            height: 1em;
+            padding: 0.26em 0.5em 0.3em 0.5em;
+            border-radius: 10px;
+            -webkit-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out; }
+        .content .palette__details .color1 .hex span.hexcode.visible:after, .content .palette__details .color1 .rgb span.hexcode.visible:after, .content .palette__details .color2 .hex span.hexcode.visible:after, .content .palette__details .color2 .rgb span.hexcode.visible:after, .content .palette__details .color3 .hex span.hexcode.visible:after, .content .palette__details .color3 .rgb span.hexcode.visible:after, .content .palette__details .color4 .hex span.hexcode.visible:after, .content .palette__details .color4 .rgb span.hexcode.visible:after {
+          opacity: 1;
+          visibility: visible; }
+        .content .palette__details .color1 .hex span.rgbcode.visible:after, .content .palette__details .color1 .rgb span.rgbcode.visible:after, .content .palette__details .color2 .hex span.rgbcode.visible:after, .content .palette__details .color2 .rgb span.rgbcode.visible:after, .content .palette__details .color3 .hex span.rgbcode.visible:after, .content .palette__details .color3 .rgb span.rgbcode.visible:after, .content .palette__details .color4 .hex span.rgbcode.visible:after, .content .palette__details .color4 .rgb span.rgbcode.visible:after {
+          opacity: 1;
+          visibility: visible; }
 
 input[type="text"] {
   width: 47.5%;

@@ -231,6 +231,41 @@ body {
         span.hexcode {
           user-select: all;
         }
+        span.rgbcode {
+          user-select: all;
+        }
+        span.rgbcode,
+        span.hexcode {
+          position: relative;
+          &:after {
+            opacity: 0;
+            visibility: hidden;
+            letter-spacing: 1px;
+            content: "COPIED";
+            font-size: 12px;
+            background: $color2;
+            color: $color1;
+            position: absolute;
+            right: calc(-100% - 5px);
+            top: 0px;
+            height: 1em;
+            padding: 0.26em 0.5em 0.3em 0.5em;
+            border-radius: 10px;
+            transition: all 400ms ease-in-out;
+          }
+        }
+        span.hexcode{
+          &.visible:after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        span.rgbcode{
+          &.visible:after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
       }
     }
   }

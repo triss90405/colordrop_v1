@@ -75,8 +75,8 @@
         echo '
         <div class="color1">
           <div class="color" style="background:#'.$hex.'"></div>
-          <p class="hex">HEX: <span class="hexcode">#'.$hex.'</span></p>
-          <p class="rgb">RGB: <span>'.$rgb.'</span></p>
+          <p class="hex" data-clipboard-text="#'.$hex.'">HEX: <span class="hexcode">#'.$hex.'</span></p>
+          <p class="rgb"  data-clipboard-text="'.$rgb.'">RGB: <span class="rgbcode">'.$rgb.'</span></p>
         </div>
         ';
       }

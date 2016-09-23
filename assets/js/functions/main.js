@@ -1,4 +1,5 @@
 // @codekit-prepend '../vendor/min/jquery-3.1.0-min.js'
+// @codekit-prepend '../vendor/min/clipboard.min.js'
 
 // Change background color
 function bgChangeColor() {
@@ -276,6 +277,39 @@ function toggleMenu() {
 // }
 
 
+function copyMessage() {
+  $(window).resize(function() {
+    var wWidth = $(window).width();
+    if(wWidth > 768) {
+      new Clipboard('.hex');
+      new Clipboard('.rgb');
+      var hexCode = $('.hexcode'),
+          hexButton = $('.hex'),
+          rgbCode = $('.rgbcode'),
+          rgbButton = $('.rgb');
+
+      hexButton.on('click', function() {
+        $(this).children(hexCode).addClass('visible');
+        function hideCopy(){
+          hexButton.children(hexCode).removeClass('visible');
+        }
+        setTimeout(hideCopy, 2500);
+      });
+
+      rgbButton.on('click', function() {
+        $(this).children(rgbCode).addClass('visible');
+        function hideCopy(){
+          rgbButton.children(rgbCode).removeClass('visible');
+        }
+        setTimeout(hideCopy, 2500);
+      });
+    } else {
+      // Disable the auto copy for mobile
+    }
+  });
+}
+
+
 // Call fucntions
 $(document).ready(function() {
   bgChangeColor();
@@ -285,6 +319,7 @@ $(document).ready(function() {
   acceptCookies();
   declineCookies();
   toggleMenu();
+  copyMessage();
   // gridderLink();
   // addFavourite();
   // removeFavourite();
