@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Noto+Sans";
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -1163,27 +1164,20 @@ textarea {
   /* 2 */ }
 
 body {
-  font-family: "proxima-nova-soft";
+  font-family: "'Noto Sans', sans-serif";
   font-size: 16px;
   color: #433F3F;
   width: 100vw;
   overflow-x: hidden; }
 
-*::-moz-selection {
-  color: #F7F7F7;
-  background: #2980D9; }
-
-*::selection {
-  color: #F7F7F7;
-  background: #2980D9; }
-
-body {
-  opacity: 0; }
-
-.wf-active body {
-  opacity: 1;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+* {
+  font-family: 'Noto Sans', sans-serif; }
+  *::-moz-selection {
+    color: #F7F7F7;
+    background: #2980D9; }
+  *::selection {
+    color: #F7F7F7;
+    background: #2980D9; }
 
 .navigation {
   background: #F7F7F7;
@@ -1462,7 +1456,7 @@ body {
       margin: 20px 20px 100px 20px;
       display: block;
       width: auto;
-      font-size: 0.87rem; }
+      font-size: 0.8rem; }
     .content .palette__details hr {
       border: 0;
       background: #c4c4c4;

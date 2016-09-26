@@ -6,8 +6,6 @@
     <meta name="description" content="The last color palette you'll ever need. A collection of great looking color paletters. Compare colors on different backgrounds, save your favorites">
     <meta name="author" content="Tristan White">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.typekit.net/jyd7pdv.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/apple-touch-icon-60x60.png">
