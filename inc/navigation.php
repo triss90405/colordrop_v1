@@ -23,18 +23,26 @@
     <hr>
     <a href="/flat.php">Flat colors</a>
     <a href="#" class="dialog__trigger">About</a>
+    <a href="#0" class="color__trigger">
+      Background
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve">
+        <path d="M87.49,54.077c-0.442,0.446-33.328,38.638-33.374,38.662l-0.008-0.016c-0.763,0.431-1.636,0.703-2.576,0.703  c-2.863,0-5.189-2.323-5.189-5.194c0-1.854,0.986-3.479,2.447-4.393l-0.003-0.011l28.889-33.388L48.787,17.051l0.003-0.012  c-1.461-0.914-2.447-2.538-2.447-4.392c0-2.872,2.326-5.194,5.189-5.194c0.94,0,1.813,0.272,2.576,0.707l0.008-0.02  c0.046,0.023,32.932,38.216,33.374,38.662C89.518,48.83,89.518,52.048,87.49,54.077z"/><path d="M54.502,54.077c-0.441,0.446-33.328,38.638-33.373,38.662l-0.012-0.016c-0.76,0.431-1.632,0.703-2.572,0.703  c-2.863,0-5.189-2.323-5.189-5.194c0-1.854,0.985-3.479,2.447-4.393l-0.004-0.011l28.89-33.388l-28.89-33.388l0.004-0.012  c-1.462-0.914-2.447-2.538-2.447-4.392c0-2.872,2.326-5.194,5.189-5.194c0.94,0,1.812,0.272,2.572,0.707l0.012-0.02  c0.045,0.023,32.932,38.216,33.373,38.662C56.529,48.83,56.529,52.048,54.502,54.077z"/>
+      </svg>
+    </a>
   </div>
 
   <div class="navigation__footer">
-    <span class="bg__color blue"></span>
-    <span class="bg__color red"></span>
-    <span class="bg__color light"></span>
-    <span class="bg__color dark"></span>
-    <span class="bg__color gradient--pink"></span>
-    <span class="bg__color gradient--green"></span>
-    <span class="bg__color gradient--blue"></span>
-    <span class="bg__color gradient--yellow"></span>
-    <span class="bg__color gradient--grey"></span>
+    <div class="color__wrapper">
+      <span class="bg__color blue"></span>
+      <span class="bg__color red"></span>
+      <span class="bg__color light"></span>
+      <span class="bg__color dark"></span>
+      <span class="bg__color gradient--pink"></span>
+      <span class="bg__color gradient--green"></span>
+      <span class="bg__color gradient--blue"></span>
+      <span class="bg__color gradient--yellow"></span>
+      <span class="bg__color gradient--grey"></span>
+    </div>
   </div>
 
 </nav><!-- end .navigation -->

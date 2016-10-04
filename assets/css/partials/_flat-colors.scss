@@ -28,8 +28,10 @@ $page-sunglo: #E26A6A;
 section#flat__colors.content {
   min-height: 100vh;
   padding-bottom: 0;
-  padding-top: 50px;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
   .tiny-3 {
     padding: 0 !important;
   }

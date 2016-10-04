@@ -280,7 +280,7 @@ function toggleMenu() {
 function copyMessage() {
 
   var wWidth = $(window).width();
-  
+
   if(wWidth > 768) {
     new Clipboard('.hex');
     new Clipboard('.rgb');
@@ -310,6 +310,20 @@ function copyMessage() {
 
 }
 
+function bgColor() {
+  var colorWrapper = $('.color__wrapper'),
+      colorTrigger = $('.color__trigger'),
+      colorItem = $('.bg__color');
+
+      colorTrigger.on('click', function() {
+        colorWrapper.toggleClass('active');
+      });
+
+      colorItem.on('click', function() {
+        colorWrapper.removeClass('active');
+      });
+}
+
 
 // Call fucntions
 $(document).ready(function() {
@@ -321,6 +335,7 @@ $(document).ready(function() {
   declineCookies();
   toggleMenu();
   copyMessage();
+  bgColor();
   // gridderLink();
   // addFavourite();
   // removeFavourite();

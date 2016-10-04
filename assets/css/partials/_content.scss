@@ -18,7 +18,7 @@ body {
   overflow: hidden;
   transition: all 200ms ease-in-out;
   &.menu--active {
-    width: calc(100vw - 400px);
+    //width: calc(100vw - 400px);
     @media (max-width: 768px) {
       width: 100vw;
     }
@@ -85,7 +85,7 @@ body {
     transition: all 200ms ease-out;
     overflow-y: hidden;
     @media(max-width: 768px) {
-      width: 100%;
+      //width: 100%;
       right: -100%;
       overflow: scroll !important;
     }
