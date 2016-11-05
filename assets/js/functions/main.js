@@ -85,17 +85,26 @@ function detailsView() {
       closeButton = $('.sidebar__close'),
       cookieAlert = $('.cookie'),
       navigation = $('nav');
-  palette.on('click', function(){
+  palette.on('click', function(e){
     paletteDetails.removeClass('active');
     content.addClass('menu--active');
     cookieAlert.addClass('menu--active');
     $(this).next(paletteDetails).toggleClass('active');
     navigation.toggleClass('hide');
+    e.stopPropagation();
   });
   closeButton.on('click', function() {
     paletteDetails.removeClass('active');
     content.removeClass('menu--active');
     cookieAlert.removeClass('menu--active');
+  });
+  // Close the dialog - press escape key // key#27
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+      paletteDetails.removeClass('active');
+      content.removeClass('menu--active');
+      cookieAlert.removeClass('menu--active');
+    }
   });
 }
 
